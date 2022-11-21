@@ -4,4 +4,34 @@ title: "Creating a ReactJS Component"
 
 Based on "Create and Publish packages to npm - React Component Library using tsdx" at https://www.youtube.com/watch?v=aVFasPXkyRE
 
-Creating a ReactJS Component
+In your terminal create a new ReactJS Component (here: foo-component):
+
+```
+$ npx tsdx create foo-component
+```
+
+If you get prompeted as follows:
+
+```
+Need to install the following packages:
+  tsdx@0.14.1
+Ok to proceed? (y)
+```
+
+Agree by choosing: *y* for yes
+
+Next, when being given the choice below:
+
+```
+? Choose a template ... 
+  basic
+  react
+> react-with-storybook  
+```
+
+We choose **react-with-storybook** this time, so we can develop our ReactJS application making use of Storybook. Hence, move the sideways caret (```>```) in front of **react-with-storybook** and confirm your choice by hitting the Enter key.
+
+
+
+
+
