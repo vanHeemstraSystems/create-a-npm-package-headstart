@@ -21,13 +21,6 @@
     "text": "Requirements of the application of this site"
   },
   {
-    "objectID": "building-our-application/creating-a-reactjs-component.html",
-    "href": "building-our-application/creating-a-reactjs-component.html",
-    "title": "Creating a ReactJS Component",
-    "section": "",
-    "text": "Creating a ReactJS Component"
-  },
-  {
     "objectID": "building-our-application/index.html",
     "href": "building-our-application/index.html",
     "title": "Building Our Application",
@@ -40,6 +33,13 @@
     "title": "Publishing a ReactJS Component",
     "section": "",
     "text": "Publishing a ReactJS Component"
+  },
+  {
+    "objectID": "building-our-application/creating-a-reactjs-component/index.html",
+    "href": "building-our-application/creating-a-reactjs-component/index.html",
+    "title": "Creating a ReactJS Component",
+    "section": "",
+    "text": "Creating a ReactJS Component"
   },
   {
     "objectID": "introduction/index.html",
