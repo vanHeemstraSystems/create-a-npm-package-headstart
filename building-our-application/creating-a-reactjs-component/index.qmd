@@ -10,6 +10,18 @@ In your terminal create a new ReactJS Component (here: **foo-component**):
 $ npx tsdx create foo-component
 ```
 
+If the following error occurs:
+
+``` {.sh}
+Cannot read property 'pickAlgorithm' of null
+```
+
+Simply run:
+
+``` {.sh}
+$ npm cache clear --force
+```
+
 If you get prompted as follows:
 
 ``` {.sh}
