@@ -2,4 +2,6 @@
 title: "Building Our Application"
 ---
 
-Building the application of this site
+Creating a ReactJS Component
+
+Publishing a ReactJS Component as a Package to Node Package Manager (NPM) Registry
