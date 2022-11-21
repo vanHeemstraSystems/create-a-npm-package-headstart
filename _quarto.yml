@@ -11,25 +11,25 @@ website:
       - text: "Home"
         file: index.qmd
       - text: "Introduction"
-        file: introduction.qmd
+        file: introduction/index.qmd
       - text: "Requirements"
-        file: requirements.qmd 
+        file: requirements/index.qmd 
       - text: "Building Our Application"
         file: building-our-application/index.qmd
       - text: "Conclusion"
-        file: conclusion.qmd        
+        file: conclusion/index.qmd        
 
 sidebar:
   - title: "Introduction"
     style: "docked"
     background: light
     contents:
-      - introduction.qmd
+      - introduction/index.qmd
   - title: "Requirements"
     style: "docked"
     background: light
     contents:
-      - requirements.qmd
+      - requirements/index.qmd
   - title: "Building Our Application"
     style: "docked"
     background: light
@@ -39,7 +39,7 @@ sidebar:
     style: "docked"
     background: light
     contents:
-      - conclusion.qmd
+      - conclusion/index.qmd
       
 format:
   html:
