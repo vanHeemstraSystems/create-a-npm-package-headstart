@@ -1,0 +1,51 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Create an NPM Package"
+  navbar:
+    background: primary
+    search: true
+    left:
+      - text: "Home"
+        file: index.qmd
+      - text: "Introduction"
+        file: introduction.qmd
+      - text: "Requirements"
+        file: requirements.qmd 
+      - text: "Building Our Application"
+        file: building-our-application.qmd
+      - text: "Conclusion"
+        file: conclusion.qmd        
+
+sidebar:
+  - title: "Introduction"
+    style: "docked"
+    background: light
+    contents:
+      - introduction.qmd
+  - title: "Requirements"
+    style: "docked"
+    background: light
+    contents:
+      - requirements.qmd
+  - title: "Building Our Application"
+    style: "docked"
+    background: light
+    contents:
+      - building-our-application.qmd
+  - title: "Conclusion"
+    style: "docked"
+    background: light
+    contents:
+      - conclusion.qmd
+      
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+execute:
+  freeze: auto
