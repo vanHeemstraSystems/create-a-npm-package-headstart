@@ -4,4 +4,4 @@ title: "Building Our Application"
 
 [Creating a ReactJS Component](creating-a-reactjs-component.qmd)
 
-Publishing a ReactJS Component as a Package to Node Package Manager (NPM) Registry
+[Publishing a ReactJS Component](building-our-application/publishing-a-reactjs-component.qmd) as a Package to Node Package Manager (NPM) Registry
