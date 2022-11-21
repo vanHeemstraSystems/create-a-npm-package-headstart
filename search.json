@@ -35,6 +35,13 @@
     "text": "Creating a ReactJS Component\nPublishing a ReactJS Component as a Package to Node Package Manager (NPM) Registry"
   },
   {
+    "objectID": "building-our-application/creating-a-github-repository/index.html",
+    "href": "building-our-application/creating-a-github-repository/index.html",
+    "title": "Creating a GitHub repository",
+    "section": "",
+    "text": "Based on “Fully Automated npm publish using GitHub Actions and Semantic Release” at https://www.youtube.com/watch?v=QZdY4XYbqLI"
+  },
+  {
     "objectID": "building-our-application/creating-a-reactjs-component/index.html",
     "href": "building-our-application/creating-a-reactjs-component/index.html",
     "title": "Creating a ReactJS Component",
