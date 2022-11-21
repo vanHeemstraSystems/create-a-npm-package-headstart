@@ -15,7 +15,7 @@ website:
       - text: "Requirements"
         file: requirements.qmd 
       - text: "Building Our Application"
-        file: building-our-application.qmd
+        file: building-our-application/index.qmd
       - text: "Conclusion"
         file: conclusion.qmd        
 
@@ -34,7 +34,7 @@ sidebar:
     style: "docked"
     background: light
     contents:
-      - building-our-application.qmd
+      - building-our-application/index.qmd
   - title: "Conclusion"
     style: "docked"
     background: light
