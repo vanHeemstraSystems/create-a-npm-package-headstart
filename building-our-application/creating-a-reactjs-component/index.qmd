@@ -83,9 +83,11 @@ Open Visual Studio Code from within this directory:
 $ code .
 ```
 
-The first change we are going to make is in package.json.
+The first change we are going to make is in package.json. Change the name of the package from an unscoped name (here: **foo-component**) to a scoped package (here: **@vanheemstrasystems/foo-component**).
 
 ``` {.sh}
-
+...
+"name": "@vanheemstrasystems/foo-component"
+...
 ```
 package.json
