@@ -10,4 +10,19 @@ The **.github** directory was also created.
 
 Now we'll make sure we have a repository on GitHub (for convenience, but mandatory, named the same: **foo-component**).
 
+We do **not** have to created a ```README.md``` or ```LICENSE``` file as these have already been created when creating the ReactJS component.
+
+Now inside the new directory in Visual Studio Code, remove the ```.github``` directory with all content. Next, run this command:
+
+``` {.sh}
+$ git init
+```
+
+The above command will initialize a new ```.github``` directory for you.
+
+Continue by adding all files and directories to git by typing:
+
+``` {.sh)
+$ git add .
+```
 
