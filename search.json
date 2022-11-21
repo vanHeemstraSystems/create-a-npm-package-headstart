@@ -25,7 +25,7 @@
     "href": "building-our-application/publishing-a-reactjs-component/index.html",
     "title": "Publishing a ReactJS Component",
     "section": "",
-    "text": "Publishing a ReactJS Component"
+    "text": "Based on “Fully Automated npm publish using GitHub Actions and Semantic Release” at https://www.youtube.com/watch?v=QZdY4XYbqLI\nMore …"
   },
   {
     "objectID": "building-our-application/index.html",
