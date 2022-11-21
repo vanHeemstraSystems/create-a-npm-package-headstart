@@ -278,10 +278,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co">    - run: npm test</span></span>
 <span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co">...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>.github/workflows/node.js.yml</p>
-<p>now that that bit is out of the way and we are running this in multiple versions of node multiple operating systems we can start to look into what really matters for us which is these steps over here and this first one is just to clone and check out our branch so this one is very needed right and then this one is just to set up node.js and as you can see it’s already using that matrix for the node version that we are using</p>
-<p>then is our own commands the first one is the npmci which is similar to npm installed then we are building this library we are running tests and you can run a lot of other stuff over here so for now i will just say yes start the commit i want this i will say create publish any message that you want here so any message you want here it really doesn’t matter</p>
-<p>i will say commit the new file and now i have that file over here okay and you can see that if i go now to actions it will start already a new action and this action will take anywhere from one minute to five minutes more or less so as you will see in this video i will do a lot of fast forward for you otherwise you will have to wait all the time for me and for the github actions to run okay but as you can see already you are running version 10 of node in ubuntu version 10 on windows latest and then version 12 on both so the more operating systems and the more versions of node.js you put the more jobs will run</p>
-<p>if you are in a public repository is not a big deal but if you are in a private repository you have only 2 000 minutes free i think it’s per month or per week i will verify input somewhere on the video uh and after that amount you will start to be charged for it so right now i will just fast forward this for you to not have to wait for all of this to run around three minutes after as you can see over here all our jobs finish their execution</p>
+<p>The first step is just to clone and check out our branch:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">...</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co">    - uses: actions/checkout@v3</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co">...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>.github/workflows/node.js.yml</p>
+<p>The second step is to set up node.js and as you can see it’s already using that matrix for the node version that we are using:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">...</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co">    - name: Use Node.js ${{ matrix.node-version }}</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co">      uses: actions/setup-node@v3</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co">      with:</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co">        node-version: ${{ matrix.node-version }}</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co">        cache: 'npm'</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co">...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>.github/workflows/node.js.yml</p>
+<p>Then the <strong>run</strong> commands:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">...</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co">    - run: npm ci</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co">    - run: npm run build --if-present</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co">    - run: npm test</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co">...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>.github/workflows/node.js.yml</p>
+<p>The first run command is the <code>npm ci</code>, which is similar to <code>npm install</code>.</p>
+<p>The second run command is building this library we are running tests</p>
+<p>The third run command will run any tests defined.</p>
+<p>Commit the new GitHub Action file (here: <strong>node.js.yml</strong>).</p>
+<p>By commiting to the <strong>main</strong> branch, this will start already the new GitHub Action.</p>
 
 
 
