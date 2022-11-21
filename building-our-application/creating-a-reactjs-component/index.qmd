@@ -4,7 +4,7 @@ title: "Creating a ReactJS Component"
 
 Based on "Create and Publish packages to npm - React Component Library using tsdx" at https://www.youtube.com/watch?v=aVFasPXkyRE
 
-In your terminal create a new ReactJS Component (here: foo-component):
+In your terminal create a new ReactJS Component (here: **foo-component**):
 
 ``` {.sh}
 $ npx tsdx create foo-component
@@ -36,10 +36,10 @@ We choose **react-with-storybook** this time, so we can develop our ReactJS appl
 ? Who is the package author? »  
 ```
 
-As the package owner state the unique domain-name (here: **vanheemstrasystems**) to which the new to be created component belongs to guarantee it won't be colliding with a component that has been created by some other creator.
+As the package owner state the unique fully-qualified domain-name (here: **vanheemstrasystems.com**) to which the new to be created component belongs to guarantee it won't be colliding with a component that has been created by some other creator.
 
 ``` {.sh}
-√ Who is the package author? · vanheemstrasystems
+√ Who is the package author? · vanheemstrasystems.com
 √ Created foo-component
 √ Installed dependencies
 
