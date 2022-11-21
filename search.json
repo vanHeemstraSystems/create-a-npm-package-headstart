@@ -14,13 +14,6 @@
     "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
-    "objectID": "building-our-application.html",
-    "href": "building-our-application.html",
-    "title": "Building Our Application",
-    "section": "",
-    "text": "Creating a ReactJS Component\nPublishing a ReactJS Component as a Package to Node Package Manager (NPM) Registry"
-  },
-  {
     "objectID": "requirements.html",
     "href": "requirements.html",
     "title": "Requirements",
@@ -40,6 +33,13 @@
     "title": "Creating a ReactJS Component",
     "section": "",
     "text": "Creating a ReactJS Component"
+  },
+  {
+    "objectID": "building-our-application/index.html",
+    "href": "building-our-application/index.html",
+    "title": "Building Our Application",
+    "section": "",
+    "text": "Creating a ReactJS Component\nPublishing a ReactJS Component as a Package to Node Package Manager (NPM) Registry"
   },
   {
     "objectID": "building-our-application/publishing-a-reactjs-component.html",
