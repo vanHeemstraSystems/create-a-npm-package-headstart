@@ -1,5 +1,5 @@
 ---
-title: "Creating a GitHub repository"
+title: "Creating a GitHub Repository"
 ---
 
 Based on "Fully Automated npm publish using GitHub Actions and Semantic Release" at https://www.youtube.com/watch?v=QZdY4XYbqLI
