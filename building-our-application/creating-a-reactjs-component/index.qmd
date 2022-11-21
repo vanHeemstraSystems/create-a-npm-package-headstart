@@ -6,7 +6,7 @@ Based on "Create and Publish packages to npm - React Component Library using tsd
 
 In your terminal create a new ReactJS Component (here: foo-component):
 
-```
+``` {.javascript code-line-numbers="true"}
 $ npx tsdx create foo-component
 ```
 
