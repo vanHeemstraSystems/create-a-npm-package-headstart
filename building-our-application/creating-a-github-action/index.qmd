@@ -4,12 +4,22 @@ title: "Creating a GitHub Action"
 
 Based on "Fully Automated npm publish using GitHub Actions and Semantic Release" at https://www.youtube.com/watch?v=QZdY4XYbqLI
 
+The next step is to create a GitHub action so click the "**Actions**" tab on the GitHub repository page of **foo-component**. From the **Continuous Integration** workflows choose the workflow called **NodeJS: Build and test a Node.js project with npm.** and click on "**configure**".
 
-the next step is to create our action so i will go over here create on actions and you can see that we have quite a few actions over there we need to click on these
-more continuous integration workflows and one of those continuous integrations workflows will be nodejs so you can see it over here
+Stick with the default name that is given to the Yaml file, here: **node.js.yml**
 
+Next, lets look inside of the newly created Action:
 
-we will click on set up this workflow and now the first thing you might see is this name and over here you can decide any name for that yml file it really doesn't matter but in my case i will call it publish
+``` {.yml}
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+
+name: Node.js CI
+
+...
+```
+.github/workflows/node.js.yml
+
 
 then what do we have over here we have on push to the branch main all of these jobs will run at the same time if we have a pull request from any branch into master that request will run all of these jobs as well but in reality if you want more than only to master let's say that you have branches from development to production and you want to run everything that goes into production well you can come over here and say main and then say also production 
 
