@@ -6,7 +6,7 @@ Based on "Create and Publish packages to npm - React Component Library using tsd
 
 In your terminal create a new ReactJS Component (here: foo-component):
 
-``` {.javascript code-line-numbers="true"}
+```
 $ npx tsdx create foo-component
 ```
 
@@ -32,6 +32,11 @@ Next, when being given the choice below:
 We choose **react-with-storybook** this time, so we can develop our ReactJS application making use of Storybook. Hence, move the sideways caret (```>```) in front of **react-with-storybook** and confirm your choice by hitting the Enter key.
 
 
+Test markup:
+``` {.javascript code-line-numbers="true"}
+var foo;
+var bar;
+```
 
 
 
