@@ -26,3 +26,11 @@ Continue by adding all files and directories to git by typing:
 $ git add .
 ```
 
+And finally, run:
+
+``` {.sh}
+$ git commit -m "Initial commit"
+```
+
+
+
