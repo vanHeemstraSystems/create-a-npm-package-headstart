@@ -32,7 +32,7 @@
     "href": "building-our-application/index.html",
     "title": "Building Our Application",
     "section": "",
-    "text": "Creating a ReactJS Component\nCreating a GitHub Repository\nPublishing a ReactJS Component as a Package to Node Package Manager (NPM) Registry"
+    "text": "Creating a ReactJS Component\nCreating a GitHub Repository\nCreating a GitHub Action\nPublishing a ReactJS Component as a Package to Node Package Manager (NPM) Registry"
   },
   {
     "objectID": "building-our-application/creating-a-github-repository/index.html",
