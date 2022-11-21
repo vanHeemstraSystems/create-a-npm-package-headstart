@@ -39,7 +39,7 @@
     "href": "building-our-application/creating-a-reactjs-component/index.html",
     "title": "Creating a ReactJS Component",
     "section": "",
-    "text": "Based on “Create and Publish packages to npm - React Component Library using tsdx” at https://www.youtube.com/watch?v=aVFasPXkyRE\nIn your terminal create a new ReactJS Component (here: foo-component):\n$ npx tsdx create foo-component\nIf you get prompeted as follows:\nNeed to install the following packages:\n  tsdx@0.14.1\nOk to proceed? (y)\nAgree by choosing: y for yes\nNext, when being given the choice below:\n? Choose a template ... \n  basic\n  react\n> react-with-storybook  \nWe choose react-with-storybook this time, so we can develop our ReactJS application making use of Storybook. Hence, move the sideways caret (>) in front of react-with-storybook and confirm your choice by hitting the Enter key."
+    "text": "Based on “Create and Publish packages to npm - React Component Library using tsdx” at https://www.youtube.com/watch?v=aVFasPXkyRE\nIn your terminal create a new ReactJS Component (here: foo-component):\n$ npx tsdx create foo-component\nIf you get prompeted as follows:\nNeed to install the following packages:\n  tsdx@0.14.1\nOk to proceed? (y)\nAgree by choosing: y for yes\nNext, when being given the choice below:\n? Choose a template ... \n  basic\n  react\n> react-with-storybook  \nWe choose react-with-storybook this time, so we can develop our ReactJS application making use of Storybook. Hence, move the sideways caret (>) in front of react-with-storybook and confirm your choice by hitting the Enter key.\nTest markup:\nvar foo;\nvar bar;"
   },
   {
     "objectID": "introduction/index.html",
