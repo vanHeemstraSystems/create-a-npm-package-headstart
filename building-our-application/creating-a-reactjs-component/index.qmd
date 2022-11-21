@@ -39,14 +39,37 @@ We choose **react-with-storybook** this time, so we can develop our ReactJS appl
 As the package owner state the unique domain-name (here: **vanheemstrasystems**) to which the new to be created component belongs to guarantee it won't be colliding with a component that has been created by some other creator.
 
 ``` {.sh}
-More ...
+√ Who is the package author? · vanheemstrasystems
+√ Created foo-component
+√ Installed dependencies
+
+  Awesome! You're now ready to start coding.
+
+  I already ran yarn install for you, so your next steps are:
+    cd foo-component
+
+  To start developing (rebuilds on changes):
+    yarn start
+
+  To build for production:
+    yarn build
+
+  To test your library with Jest:
+    yarn test
+
+  Questions? Feedback? Please let me know!
+  https://github.com/formium/tsdx/issues
 ```
 
+/*
 Test markup:
 ``` {.javascript code-line-numbers="true"}
 var foo;
 var bar;
 ```
+*/
+
+Now we have created the skeleton of the new ReactJS component, called **foo-component**!
 
 
 
