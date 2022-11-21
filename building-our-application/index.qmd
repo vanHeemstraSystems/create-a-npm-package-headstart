@@ -2,6 +2,8 @@
 title: "Building Our Application"
 ---
 
-[Creating a ReactJS Component](creating-a-reactjs-component/index.qmd)
+1. [Creating a ReactJS Component](creating-a-reactjs-component/index.qmd)
 
-[Publishing a ReactJS Component](publishing-a-reactjs-component/index.qmd) as a Package to Node Package Manager (NPM) Registry
+2. [Creating a GitHub Repository](creating-a-github-repository/index.qmd)
+
+3. [Publishing a ReactJS Component](publishing-a-reactjs-component/index.qmd) as a Package to Node Package Manager (NPM) Registry
