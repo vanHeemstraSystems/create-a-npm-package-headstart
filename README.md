@@ -1,3 +1,5 @@
+[![Quarto Publish](https://github.com/vanHeemstraSystems/create-an-npm-package/actions/workflows/publish.yml/badge.svg)](https://github.com/vanHeemstraSystems/create-an-npm-package/actions/workflows/publish.yml)
+
 create-an-npm-package
 # Create an Node Package Manager (NPM) Package
 
