@@ -1,0 +1,1 @@
+Sitemap: https://github.com/vanHeemstraSystems/create-an-npm-package-headstart/sitemap.xml
