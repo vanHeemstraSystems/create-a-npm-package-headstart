@@ -79,13 +79,13 @@ $ cd foo-component
 
 Open Visual Studio Code from within this directory:
 
-```
+``` {.sh}
 $ code .
 ```
 
 The first change we are going to make is in package.json.
 
-```
+``` {.sh}
 
 ```
 package.json
