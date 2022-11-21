@@ -10,7 +10,7 @@ In your terminal create a new ReactJS Component (here: foo-component):
 $ npx tsdx create foo-component
 ```
 
-If you get prompeted as follows:
+If you get prompted as follows:
 
 ``` {.sh}
 Need to install the following packages:
@@ -31,6 +31,16 @@ Next, when being given the choice below:
 
 We choose **react-with-storybook** this time, so we can develop our ReactJS application making use of Storybook. Hence, move the sideways caret (```>```) in front of **react-with-storybook** and confirm your choice by hitting the Enter key.
 
+``` {.sh}
+√ Choose a template · react-with-storybook
+? Who is the package author? »  
+```
+
+As the package owner state the unique domain-name (here: **vanheemstrasystems**) to which the new to be created component belongs to guarantee it won't be colliding with a component that has been created by some other creator.
+
+``` {.sh}
+More ...
+```
 
 Test markup:
 ``` {.javascript code-line-numbers="true"}
