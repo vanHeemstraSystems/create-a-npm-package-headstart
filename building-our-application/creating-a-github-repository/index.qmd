@@ -8,7 +8,7 @@ Previously we have created a new ReactJS component called **foo-component**.
 
 The **.github** directory was also created. 
 
-Now we'll make sure we have a repository on GitHub (for convenience, but mandatory, named the same: **foo-component**).
+Now we'll make sure we have a repository on GitHub (for convenience, but not mandatorily, named the same: **foo-component**).
 
 We do **not** have to created a ```README.md``` or ```LICENSE``` file as these have already been created when creating the ReactJS component.
 
@@ -30,7 +30,9 @@ And finally, run:
 
 ``` {.sh}
 $ git commit -m "first commit"
+$ git branch -M main
+$ git remote add origin git@github.com:vanHeemstraSystems/foo-component.git
+$ git push -u origin main
 ```
 
-
-
+Upon inspection, you should now see all files and directories that were created as part of the ReactJS component to be in the GitHub repository at 
