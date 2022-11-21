@@ -22,7 +22,7 @@ The above command will initialize a new ```.github``` directory for you.
 
 Continue by adding all files and directories to git by typing:
 
-``` {.sh)
+``` {.sh}
 $ git add .
 ```
 
