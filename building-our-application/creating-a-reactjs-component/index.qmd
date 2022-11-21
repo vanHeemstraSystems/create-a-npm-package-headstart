@@ -48,7 +48,7 @@ We choose **react-with-storybook** this time, so we can develop our ReactJS appl
 ? Who is the package author? »  
 ```
 
-As the package owner state the unique fully-qualified domain-name (here: **vanheemstrasystems.com**) to which the new to be created component belongs to guarantee it won't be colliding with a component that has been created by some other creator.
+As the package owner state the unique fully-qualified domain-name (here: **vanheemstrasystems.com**) to which the new to be created component belongs.
 
 ``` {.sh}
 √ Who is the package author? · vanheemstrasystems.com
@@ -95,7 +95,7 @@ Open Visual Studio Code from within this directory:
 $ code .
 ```
 
-The first change we are going to make is in package.json. Change the name of the package from an unscoped name (here: **foo-component**) to a scoped package (here: **@vanheemstrasystems/foo-component**).
+The first change we are going to make is in package.json. Change the name of the package from an unscoped name (here: **foo-component**) to a scoped package (here: **@vanheemstrasystems/foo-component**). This is to guarantee the name of this component won't be colliding with a component that has been created by some other creator on the npm registry.
 
 ``` {.sh}
 ...
