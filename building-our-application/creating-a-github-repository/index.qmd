@@ -26,6 +26,12 @@ $ git init
 
 The above command will initialize a new ```.github``` directory for you.
 
+If you are prompted that the initial branch is called **master**, we decide to rename it now to a more politically correct name as **main**:
+
+``` {.sh}
+$ git branch -m main
+```
+
 Continue by adding all files and directories to git by typing:
 
 ``` {.sh}
