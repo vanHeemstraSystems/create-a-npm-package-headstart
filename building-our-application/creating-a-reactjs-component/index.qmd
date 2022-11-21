@@ -71,5 +71,21 @@ var bar;
 
 Now we have created the skeleton of the new ReactJS component, called **foo-component**!
 
+Enter the newly created directory **foo-component** like:
 
+```
+$ cd foo-component
+```
 
+Open Visual Studio Code from within this directory:
+
+```
+$ code .
+```
+
+The first change we are going to make is in package.json.
+
+```
+
+```
+package.json
