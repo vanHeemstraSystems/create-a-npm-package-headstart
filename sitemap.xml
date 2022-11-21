@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://github.com/vanHeemstraSystems/create-an-npm-package/creating-a-reactjs-component.html</loc>
+    <lastmod>2022-11-21T09:28:18.828Z</lastmod>
+  </url>
+  <url>
     <loc>https://github.com/vanHeemstraSystems/create-an-npm-package/conclusion.html</loc>
-    <lastmod>2022-11-21T08:29:48.038Z</lastmod>
+    <lastmod>2022-11-21T09:28:19.792Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/vanHeemstraSystems/create-an-npm-package/index.html</loc>
-    <lastmod>2022-11-21T08:29:49.742Z</lastmod>
+    <lastmod>2022-11-21T09:28:20.256Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/vanHeemstraSystems/create-an-npm-package/building-our-application.html</loc>
-    <lastmod>2022-11-21T08:29:50.062Z</lastmod>
+    <lastmod>2022-11-21T09:28:20.616Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/vanHeemstraSystems/create-an-npm-package/requirements.html</loc>
-    <lastmod>2022-11-21T08:29:50.350Z</lastmod>
+    <lastmod>2022-11-21T09:28:20.992Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/vanHeemstraSystems/create-an-npm-package/introduction.html</loc>
-    <lastmod>2022-11-21T08:29:50.642Z</lastmod>
+    <lastmod>2022-11-21T09:28:21.356Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/vanHeemstraSystems/create-an-npm-package/SUMMARY.html</loc>
-    <lastmod>2022-11-21T08:29:50.922Z</lastmod>
+    <lastmod>2022-11-21T09:28:21.756Z</lastmod>
   </url>
 </urlset>
