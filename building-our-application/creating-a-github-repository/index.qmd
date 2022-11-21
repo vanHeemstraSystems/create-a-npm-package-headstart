@@ -12,7 +12,13 @@ Now we'll make sure we have a repository on GitHub (for convenience, but not man
 
 We do **not** have to created a ```README.md``` or ```LICENSE``` file as these have already been created when creating the ReactJS component.
 
-Now inside the new directory in Visual Studio Code, remove the ```.github``` directory with all content. Next, run this command:
+Now inside the new directory in Visual Studio Code, remove the ```.github``` directory with all content. 
+
+``` {.sh}
+$ rm -R .github
+```
+
+Next, run this command:
 
 ``` {.sh}
 $ git init
