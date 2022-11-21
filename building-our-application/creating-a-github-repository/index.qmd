@@ -35,4 +35,6 @@ $ git remote add origin git@github.com:vanHeemstraSystems/foo-component.git
 $ git push -u origin main
 ```
 
-Upon inspection, you should now see all files and directories that were created as part of the ReactJS component to be in the GitHub repository at 
+Upon inspection, you should now see all files and directories that were created as part of the ReactJS component to be in the GitHub repository at https://github.com/vanHeemstraSystems/foo-component
+
+
