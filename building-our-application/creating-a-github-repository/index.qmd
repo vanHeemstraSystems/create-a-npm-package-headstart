@@ -3,3 +3,11 @@ title: "Creating a GitHub repository"
 ---
 
 Based on "Fully Automated npm publish using GitHub Actions and Semantic Release" at https://www.youtube.com/watch?v=QZdY4XYbqLI
+
+Previously we have created a new ReactJS component called **foo-component**.
+
+The **.github** directory was also created. 
+
+Now we'll make sure we have a repository on GitHub (for convenience, but mandatory, named the same: **foo-component**).
+
+
