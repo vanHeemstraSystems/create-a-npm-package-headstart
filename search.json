@@ -39,7 +39,7 @@
     "href": "building-our-application/creating-a-github-repository/index.html",
     "title": "Creating a GitHub repository",
     "section": "",
-    "text": "Based on “Fully Automated npm publish using GitHub Actions and Semantic Release” at https://www.youtube.com/watch?v=QZdY4XYbqLI\nPreviously we have created a new ReactJS component called foo-component.\nThe .github directory was also created.\nNow we’ll make sure we have a repository on GitHub (for convenience, but mandatory, named the same: foo-component)."
+    "text": "Based on “Fully Automated npm publish using GitHub Actions and Semantic Release” at https://www.youtube.com/watch?v=QZdY4XYbqLI\nPreviously we have created a new ReactJS component called foo-component.\nThe .github directory was also created.\nNow we’ll make sure we have a repository on GitHub (for convenience, but mandatory, named the same: foo-component).\nWe do not have to created a README.md or LICENSE file as these have already been created when creating the ReactJS component.\nNow inside the new directory in Visual Studio Code, remove the .github directory with all content. Next, run this command:\n$ git init\nThe above command will initialize a new .github directory for you.\nContinue by adding all files and directories to git by typing:\n$ git add ."
   },
   {
     "objectID": "building-our-application/creating-a-reactjs-component/index.html",
