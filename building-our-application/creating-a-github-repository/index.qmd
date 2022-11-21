@@ -29,7 +29,7 @@ $ git add .
 And finally, run:
 
 ``` {.sh}
-$ git commit -m "Initial commit"
+$ git commit -m "first commit"
 ```
 
 
