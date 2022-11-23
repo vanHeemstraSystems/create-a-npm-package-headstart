@@ -8,6 +8,8 @@ title: "Building Our Application"
 
 3. [Creating a GitHub Action](creating-a-github-action/index.qmd)
 
-4. [Setting Up Semantic Release](setting-up-semantic-release/index.qmd)
+4. [Installing Commitizen](installing-commitizen/index.qmd)
 
-5. [Publishing a ReactJS Component](publishing-a-reactjs-component/index.qmd) as a Package to Node Package Manager (NPM) Registry
+5. [Setting Up Semantic Release](setting-up-semantic-release/index.qmd)
+
+6. [Publishing a ReactJS Component](publishing-a-reactjs-component/index.qmd) as a Package to Node Package Manager (NPM) Registry
