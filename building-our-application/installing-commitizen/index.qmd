@@ -48,7 +48,27 @@ For *husky* users, we we are, add the following configuration to the project's p
 
 Why exec < /dev/tty? By default, git hooks are not interactive. This command allows the user to use their terminal to interact with Commitizen during the hook.
 
-Add the "Commitizen friendly" badge to your README.md file using the following markdown:
+
+Now if you run locally the following command:
+
+``` {.sh}
+$ git commit
+```
+
+You will get an interactive prompt where you can select the type of change that you're committing:
+
+``` {.txt}
+fix: A bug fix
+docs: Documentation only changes
+style: Changes that do not affect the meaning of the code (white-space, formatting, missing se..)
+refactor: A code change that neither fixes a bug nor adds a feature
+perf: A code change that improves performance
+test: Adding missing tests or correcting existing tests
+build: Changes that affect the build system or external dependencies (example scopes: gulp, br..)
+(Move up and down to reveal more choices)
+```
+
+Add the "Commitizen friendly" badge to the top of your README.md file using the following markdown:
 
 ``` {.json}
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
