@@ -13,7 +13,19 @@ have communism you can go over here and set up committees and and committees and
 it will open a very very nice window so it will help you with your commits and you don't need to know all of those tedious messages out of your head and so let's
 go over here to npx and they have a way for us to set it up which is over here npx comet is an init and we will just copy that and you will see that
 as soon as i copy that and let it run which will be another two or three minutes so another fast forward but as soon as that finishes we will be able to go to our
-package.json and add over here into our package.json i'm sorry over here into our package.json another command called commit and that commit we'll just do git cc
+package.json 
+
+Install commitizen as follows in the same directory as where package.json is kept:
+
+``` {.sh}
+$ npm install commitizen --save-dev --save-exact
+$ commitizen init cz-conventional-changelog --yarn --dev --exact
+```
+
+
+
+
+and add over here into our package.json i'm sorry over here into our package.json another command called commit and that commit we'll just do git cc
 so commit and i will just do git cz right there right and now i can go back to my terminal and it didn't finish yet so right now i will fast forward this for you
 right now when it finished you can still do your pit. like you were doing before but now instead of doing git commit we will do npm run commit and when you do this
 npm run commit now git cz will run let me just run this again git cz will run and you will get these very very nice message helpers for you so let's say that we added a new feature whatever feature that was and let's say that feature you are creating a blog and it's on the user settings that you change something so you will do
