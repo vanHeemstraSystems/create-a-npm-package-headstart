@@ -48,8 +48,26 @@ For *husky* users, which we are, add the following configuration to the project'
 
 Why exec < /dev/tty? By default, git hooks are not interactive. This command allows the user to use their terminal to interact with Commitizen during the hook.
 
+Optionally: Add the following script entry to package.json:
 
-Now if you run locally the following command:
+``` {.sh}
+...
+ "scripts": {
+   ...
+   "commit": "git-cz",
+   ...
+ }
+...
+```
+package.json
+
+You can now run the following command after having made a change to your code that needs to be committed:
+
+``` {.sh}
+$ npm run commit
+```
+
+Also try if you run locally the following command:
 
 ``` {.sh}
 $ git commit
