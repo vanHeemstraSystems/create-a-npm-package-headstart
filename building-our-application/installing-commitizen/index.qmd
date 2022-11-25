@@ -35,7 +35,7 @@ Create a new file called ".czrc" at the same directory as where package.json is 
 
 This just tells Commitizen which adapter we actually want our contributors to use when they try to commit to this repo.
 
-For *husky* users, we we are, add the following configuration to the project's package.json file:
+For *husky* users, which we are, add the following configuration to the project's package.json file:
 
 ``` {.json}
 "husky": {
