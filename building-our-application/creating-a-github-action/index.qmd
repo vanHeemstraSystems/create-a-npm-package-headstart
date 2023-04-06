@@ -6,7 +6,7 @@ Based on "Fully Automated npm publish using GitHub Actions and Semantic Release"
 
 The next step is to create a GitHub action so click the "**Actions**" tab on the GitHub repository page of **foo-component**. From the **Continuous Integration** workflows choose the workflow called **NodeJS: Build and test a Node.js project with npm.** and click on "**configure**".
 
-Stick with the default name that is given to the Yaml file, here: **node.js.yml**
+Rename the default name that is given to the Yaml file, here: **node.js.yml**, to something more appropriate: **publish.yml**.
 
 Next, lets look inside of the newly created Action:
 
@@ -25,7 +25,7 @@ on:
 jobs:
 ...
 ```
-.github/workflows/node.js.yml
+.github/workflows/publish.yml
 
 Then ```on push``` to the branch **main** all of the underneath jobs will run at the same time. Equally, if there is a ```pull request``` from any branch into main that request will run all of those jobs as well.
 
@@ -55,7 +55,7 @@ jobs:
     - run: npm test
 ...
 ```
-.github/workflows/node.js.yml
+.github/workflows/publish.yml
 
 The build currently runs *only* on **ubuntu the latest version**. To run this in multiple operating systems, change the above as shown here (including renaming 'build' to 'quality' as this job is all about checking quality):
 
@@ -84,7 +84,7 @@ jobs:
     - run: npm test
 ...
 ```
-.github/workflows/node.js.yml
+.github/workflows/publish.yml
 
 This matrix now has three operating systems and three versions of node, so we will have (three times three is) nine jobs running.
 
@@ -106,7 +106,7 @@ Following are **steps**:
     - run: npm test
 ...
 ```
-.github/workflows/node.js.yml
+.github/workflows/publish.yml
 
 The first step is just to clone and check out our branch:
 
@@ -115,7 +115,7 @@ The first step is just to clone and check out our branch:
     - uses: actions/checkout@v3
 ...
 ```
-.github/workflows/node.js.yml
+.github/workflows/publish.yml
 
 The second step is to set up node.js and as you can see it's already using that matrix for the node version that we are using:
 
@@ -128,7 +128,7 @@ The second step is to set up node.js and as you can see it's already using that 
         cache: 'npm'
 ...
 ```
-.github/workflows/node.js.yml
+.github/workflows/publish.yml
 
 Then the **run** commands:
 
@@ -139,7 +139,7 @@ Then the **run** commands:
     - run: npm test
 ...
 ```
-.github/workflows/node.js.yml
+.github/workflows/publish.yml
 
 The first run command is the ```npm ci```, which is similar to ```npm install```.
 
