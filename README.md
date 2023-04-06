@@ -1,7 +1,7 @@
 [![Quarto Publish](https://github.com/vanHeemstraSystems/create-an-npm-package/actions/workflows/publish.yml/badge.svg)](https://github.com/vanHeemstraSystems/create-an-npm-package/actions/workflows/publish.yml)
 
 create-an-npm-package
-# Create an Node Package Manager (NPM) Package
+# Create a Node Package Manager (NPM) Package
 
 Based on "Fully Automated npm publish using GitHub Actions and Semantic Release" at https://www.youtube.com/watch?v=QZdY4XYbqLI
 
