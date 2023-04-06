@@ -197,7 +197,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <p>Based on “Fully Automated npm publish using GitHub Actions and Semantic Release” at https://www.youtube.com/watch?v=QZdY4XYbqLI</p>
 <p>The next step is to create a GitHub action so click the “<strong>Actions</strong>” tab on the GitHub repository page of <strong>foo-component</strong>. From the <strong>Continuous Integration</strong> workflows choose the workflow called <strong>NodeJS: Build and test a Node.js project with npm.</strong> and click on “<strong>configure</strong>”.</p>
-<p>Stick with the default name that is given to the Yaml file, here: <strong>node.js.yml</strong></p>
+<p>Rename the default name that is given to the Yaml file, here: <strong>node.js.yml</strong>, to something more appropriate: <strong>publish.yml</strong>.</p>
 <p>Next, lets look inside of the newly created Action:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs</span></span>
@@ -212,7 +212,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">jobs</span><span class="kw">:</span></span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>.github/workflows/node.js.yml</p>
+<p>.github/workflows/publish.yml</p>
 <p>Then <code>on push</code> to the branch <strong>main</strong> all of the underneath jobs will run at the same time. Equally, if there is a <code>pull request</code> from any branch into main that request will run all of those jobs as well.</p>
 <p>Next is <strong>jobs</strong>.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">...</span></span>
@@ -237,7 +237,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="co">    - run: npm run build --if-present</span></span>
 <span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="co">    - run: npm test</span></span>
 <span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="co">...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>.github/workflows/node.js.yml</p>
+<p>.github/workflows/publish.yml</p>
 <p>The build currently runs <em>only</em> on <strong>ubuntu the latest version</strong>. To run this in multiple operating systems, change the above as shown here (including renaming ‘build’ to ‘quality’ as this job is all about checking quality):</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">...</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">jobs:</span></span>
@@ -262,7 +262,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="co">    - run: npm run build --if-present</span></span>
 <span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="co">    - run: npm test</span></span>
 <span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="co">...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>.github/workflows/node.js.yml</p>
+<p>.github/workflows/publish.yml</p>
 <p>This matrix now has three operating systems and three versions of node, so we will have (three times three is) nine jobs running.</p>
 <p><strong>WARNING</strong>: If you find errors when building these combinations of <code>os</code> and <code>node version</code>, you can adjust this node.js.yml file so that it takes fewer <code>os</code> and/or <code>node versions</code> into account. For example, leave out node version 14. This way your builds may succeed at the cost of platform / backwards compatibility.</p>
 <p>Following are <strong>steps</strong>:</p>
@@ -278,12 +278,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co">    - run: npm run build --if-present</span></span>
 <span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co">    - run: npm test</span></span>
 <span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co">...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>.github/workflows/node.js.yml</p>
+<p>.github/workflows/publish.yml</p>
 <p>The first step is just to clone and check out our branch:</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">...</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co">    - uses: actions/checkout@v3</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co">...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>.github/workflows/node.js.yml</p>
+<p>.github/workflows/publish.yml</p>
 <p>The second step is to set up node.js and as you can see it’s already using that matrix for the node version that we are using:</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">...</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co">    - name: Use Node.js ${{ matrix.node-version }}</span></span>
@@ -292,14 +292,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co">        node-version: ${{ matrix.node-version }}</span></span>
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co">        cache: 'npm'</span></span>
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co">...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>.github/workflows/node.js.yml</p>
+<p>.github/workflows/publish.yml</p>
 <p>Then the <strong>run</strong> commands:</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">...</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co">    - run: npm ci</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co">    - run: npm run build --if-present</span></span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co">    - run: npm test</span></span>
 <span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co">...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>.github/workflows/node.js.yml</p>
+<p>.github/workflows/publish.yml</p>
 <p>The first run command is the <code>npm ci</code>, which is similar to <code>npm install</code>.</p>
 <p>The second run command is building this library we are running tests.</p>
 <p>The third run command will run any tests defined.</p>
