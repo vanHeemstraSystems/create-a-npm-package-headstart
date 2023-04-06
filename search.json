@@ -53,7 +53,7 @@
     "href": "building-our-application/publishing-a-reactjs-component/index.html",
     "title": "Publishing a ReactJS Component",
     "section": "",
-    "text": "Based on “Fully Automated npm publish using GitHub Actions and Semantic Release” at https://www.youtube.com/watch?v=QZdY4XYbqLI\nMore …"
+    "text": "Based on “Fully Automated npm publish using GitHub Actions and Semantic Release” at https://www.youtube.com/watch?v=QZdY4XYbqLI\nAdd the following to package.json to avoid being billed for publishing to npm:\n...\n  \"publishConfig\": {\n    \"access\": \"public\"\n  },\n...\npackage.json\nMore …"
   },
   {
     "objectID": "requirements/index.html",
