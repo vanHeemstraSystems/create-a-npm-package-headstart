@@ -6,6 +6,12 @@ Based on "Fully Automated npm publish using GitHub Actions and Semantic Release"
 
 The next step is to setup semantic release.
 
+First, install the following two packages:
+
+```
+$ npm install  semantic-release semantic-release-cli --save-dev
+```
+
 Add the following to package.json:
 
 ```
