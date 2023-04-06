@@ -264,6 +264,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="co">...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>.github/workflows/node.js.yml</p>
 <p>This matrix now has three operating systems and three versions of node, so we will have (three times three is) nine jobs running.</p>
+<p><strong>WARNING</strong>: If you find errors when building these combinations of <code>os</code> and <code>node version</code>, you can adjust this node.js.yml file so that it takes fewer <code>os</code> and/or <code>node versions</code> into account. For example, leave out node version 14. This way your builds may succeed at the cost of platform / backwards compatibility.</p>
 <p>Following are <strong>steps</strong>:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">...</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co">    steps:</span></span>
@@ -300,7 +301,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co">...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>.github/workflows/node.js.yml</p>
 <p>The first run command is the <code>npm ci</code>, which is similar to <code>npm install</code>.</p>
-<p>The second run command is building this library we are running tests</p>
+<p>The second run command is building this library we are running tests.</p>
 <p>The third run command will run any tests defined.</p>
 <p>Commit the new GitHub Action file (here: <strong>node.js.yml</strong>).</p>
 <p>By commiting to the <strong>main</strong> branch, this will start already the new GitHub Action.</p>
