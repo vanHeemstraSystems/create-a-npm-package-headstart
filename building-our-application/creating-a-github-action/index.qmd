@@ -57,12 +57,12 @@ jobs:
 ```
 .github/workflows/node.js.yml
 
-The build currently runs *only* on **ubuntu the latest version**. To run this in multiple operating systems, change the above as shown here:
+The build currently runs *only* on **ubuntu the latest version**. To run this in multiple operating systems, change the above as shown here (including renaming 'build' to 'quality' as this job is all about checking quality):
 
 ``` {.yml}
 ...
 jobs:
-  build:
+  quality:
 
     runs-on: ${{ matrix.os}}
 
