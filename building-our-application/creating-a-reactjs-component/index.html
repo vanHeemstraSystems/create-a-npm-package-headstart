@@ -236,20 +236,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a><span class="st">  Questions? Feedback? Please let me know!</span></span>
 <span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a><span class="st">  https://github.com/formium/tsdx/issues</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>/* Test markup:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource javascript number-lines code-with-copy"><code class="sourceCode javascript"><span id="cb8-1"><a href="#cb8-1"></a><span class="kw">var</span> foo<span class="op">;</span></span>
-<span id="cb8-2"><a href="#cb8-2"></a><span class="kw">var</span> bar<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>*/</p>
 <p>Now we have created the skeleton of the new ReactJS component, called <strong>foo-component</strong>!</p>
 <p>Enter the newly created directory <strong>foo-component</strong> like:</p>
 <pre><code>$ cd foo-component</code></pre>
 <p>Open Visual Studio Code from within this directory:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> code .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> code .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>The first change we are going to make is in package.json. Change the name of the package from an unscoped name (here: <strong>foo-component</strong>) to a scoped package (here: <strong><span class="citation" data-cites="vanheemstrasystems/foo-component">@vanheemstrasystems/foo-component</span></strong>). This is to guarantee the name of this component won’t be colliding with a component that has been created by some other creator on the npm registry.</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">...</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="st">"name"</span><span class="ex">:</span> <span class="st">"@vanheemstrasystems/foo-component"</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="ex">...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">...</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="st">"name"</span><span class="ex">:</span> <span class="st">"@vanheemstrasystems/foo-component"</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="ex">...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>package.json</p>
+<p>Next, we have to run the <code>npm install</code> command once, to create a <code>package-lock.json</code> file, which our workflow action later on will be expecting to exist.</p>
+<pre><code>$ npm install</code></pre>
+<p>Now move to the next section “creating a github repository”, see you there!</p>
 
 
 
