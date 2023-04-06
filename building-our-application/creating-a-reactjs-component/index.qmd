@@ -102,4 +102,4 @@ Next, we have to run the ```npm install``` command once, to create a ```package-
 $ npm install
 ```
 
-Now move to the next section "creating a github repository", see you there!
+Now move to the next section "Creating a GitHub Repository", see you there!
