@@ -88,6 +88,8 @@ jobs:
 
 This matrix now has three operating systems and three versions of node, so we will have (three times three is) nine jobs running.
 
+**WARNING**: If you find errors when building these combinations of ```os``` and ```node version```, you can adjust this node.js.yml file so that it takes fewer ```os``` and/or ```node versions``` into account. For example, leave out node version 14. This way your builds may succeed at the cost of platform / backwards compatibility.
+
 Following are **steps**:
 
 ``` {.yml}
@@ -141,7 +143,7 @@ Then the **run** commands:
 
 The first run command is the ```npm ci```, which is similar to ```npm install```.
 
-The second run command is building this library we are running tests 
+The second run command is building this library we are running tests.
 
 The third run command will run any tests defined.
 
