@@ -19,4 +19,173 @@ Add the following to package.json:
 ```
 package.json
 
-More ....
+
+More ... TO DO: format below transcript to readible text and instructions to follow
+
+and add over here into our package.json i'm sorry over here into our package.json another command called commit and that commit we'll just do git cc
+so commit and i will just do git cz right there right and now i can go back to my terminal and it didn't finish yet so right now i will fast forward this for you
+right now when it finished you can still do your pit. like you were doing before but now instead of doing git commit we will do npm run commit and when you do this
+npm run commit now git cz will run let me just run this again git cz will run and you will get these very very nice message helpers for you so let's say that we added a new feature whatever feature that was and let's say that feature you are creating a blog and it's on the user settings that you change something so you will do
+user settings you will click enter and now over here you can put a message so we add a new picture to the user for example i will click enter then i don't want a longer message you can say that if you have breaking changes or not because this will impact the way that semantic release will create the version of your package in my case i will sa no which is the default i will say that it doesn't affect any open issues but if it does you you can say the issue number and then when it creates the release for you it will put a nice link between your release and the issues that you fixed now that that thing happened i can do a git push and you will see that all of those files are now over there on github action on github we can go over here to our github actions right now so i will just go to my code and i will open our workflows folder the publish yaml file and i will click on the edit button and over here you will see why i love to use this bit because if you come over here you have all the helpers that you might want to have so i will call this next job i will call it the publish job itself so i will do publish i will click now enter and over here if i do control space you can see that i have autocomplete for everything i might want to have i will say that it will run for example on ubuntu latest and i will also say  at in this specific job i will need the previous job to be finalized in this case the quality job so if i unit test files into our quality job over here i don't want my publish job to run right in a second i will also add an if over there in order to only run these if we are in master okay so in case we are in in a pull request like i'm saying here let's say we are in a pull request to master this will run in the branch so i don't want to publish from that branch i really want to publish when the commit is on master not when there is a pull request to master so we will add that if in a few seconds
+but before we add that if now we are in
+a
+very good stage to say the steps and so
+let's just do the steps and in those
+steps
+i will say the same thing that we said
+before i will use
+the checkout and i will set the
+environment for node.js
+so let me just come over here do a
+control v
+and at this stage the last bit we want
+to do is
+npmci just to install our packages
+and as you can see on the right side of
+the screen
+you can have a cache over there so if
+you feel
+that doing npmci in two different stages
+of your process
+is making stuff a little bit slower you
+can use this
+action over there called cache and it
+will
+keep your node modules into cache if you
+want to right
+now the next step after we do the npmci
+will be to run let me just remove these
+spices
+will be to run semantic release
+right and now as we have this we will
+run semantic release
+semantic release will understand the
+commits that we have and decide the next
+version to run
+before we just commit this bit let's
+just go
+over here and as you can see in this
+context i will leave all of these urls
+into the video description if you want
+to investigate it a bit more
+yourself right but we can have this if
+that i had already highlighted
+and once again we will have autocomplete
+for this but what's happening over here
+is just
+myself checking if the reference where
+we are on
+is the mind branch and if it is i want
+to run my action
+so i can come over here after the runs
+on
+i will put that if and as i was saying
+to you if i do github dot
+as you can see i have all of the
+autocompletes that you might want to
+have
+and that's the main reason i run
+all my actions code inside this little
+editor
+okay now that we have all of them and
+i think we have everything to publish
+the first version
+of our package so let's do a commit
+let's just say something over here
+added publish job for example
+right i will commit that one and now
+if i go to the actions we will see if it
+will run
+or not it might run it might fail we
+will see
+and then we will fix it we can already
+see that our action failed so we can go
+inside and see what it felt and you can
+click
+on the job click once again and we can
+see that
+it failed so let's just read the error
+can only install packages when your
+package.json and package log
+or are in sync please update your log
+file
+with an npm installed so let's just do
+that
+let's just do an npm first a git pool
+then an npm install this once again will
+take
+a few minutes to run
+now we can commit this again and
+we will see that our actions will then
+run
+so i will just do an asd
+in a fix i will just say asd isd in the
+commit
+i really don't care that much about the
+commit message
+at this stage right i just want to push
+it
+to then see our action to run so if i
+come
+over here and i now click on actions and
+other actions started
+we can click over here and hopefully
+this time all our actions will run and
+when they run we will have a version on
+npm
+to be honest even before it finished i
+am already 100 sure it will fail
+because we didn't put our npm underscore
+token
+as the environment variable so while
+this thing
+will run and i'm 100 sure it will file
+we can go already into here open
+our github actions in
+our vs code and the only thing i'm going
+to do
+over here at the bottom will be to have
+an environment
+and that environment we will just do the
+following
+oops one two i will say npm
+token column and then
+i will just say the secrets secrets
+dot npm underscore oops
+underscore token npm token so let's put
+this one
+secrets dot npm uh gita
+git up token we can even copy paste
+to avoid any typo i will save this one
+we can now come on to our command line
+do our run acp
+we can even say that it was a fix
+package
+json and now add add git
+up token just to have a better message
+for once and now this one
+will commit and now we can go
+over here to our actions click in
+actions click on this one and
+wait for it to run once again
+and as you can see now we have a
+successful job
+we can even now go to our code and
+if you click over here you can see that
+we have releases over there
+i will click on the releases and now you
+can see
+all the stuff that we did for those
+releases
+you can see that we have a proper change
+log
+of what happened in our release so if we
+have a branch
+let's say called development or
+something like that
+and you are putting a lot of features
+there and a lot of bug fixes
+every time that you then merge it into
+the main branch
+you will have a very nice change lock in
+your releases which is very very nice
