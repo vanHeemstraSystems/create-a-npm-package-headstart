@@ -15,4 +15,12 @@ Add the following to package.json to avoid being billed for publishing to npm:
 ```
 package.json
 
+# Create an NPM Token
+
+Based on "Creating and viewing Access Tokens" at https://docs.npmjs.com/creating-and-viewing-access-tokens
+
+
+
+
+
 More ...
