@@ -149,6 +149,37 @@ ul.task-list li input[type="checkbox"] {
 <section id="create-an-npm-token" class="level1">
 <h1>Create an NPM Token</h1>
 <p>Based on “Creating and viewing Access Tokens” at https://docs.npmjs.com/creating-and-viewing-access-tokens</p>
+<p>Creating granular access tokens on the website npmjs.org.</p>
+<ol type="1">
+<li><p>In the upper right corner of the page (nmpjs.org), click your profile picture (after having logged in successfully), then click <strong>Access Tokens</strong>.</p></li>
+<li><p>Click <strong>Generate New Token</strong>, then click <strong>Granualr Access Token</strong>.</p></li>
+<li><p>Confirm with your NPM password to continue.</p></li>
+<li><p>In the <strong>Token Name</strong> field, enter a name for your token (e.g., EASYASPIE). <em>TIP</em>: We can use https://randomwordgenerator.com/phrase.php to create a unique name, then remove spaces, and capitalize all.</p></li>
+<li><p>(Optional) In the <strong>Description</strong> field, enter a description for your token (e.g., NPM Token).</p></li>
+<li><p>In the <strong>Expiration</strong> field, enter a token expiration period. This must be between 1 and 365 days. Let us set it to the max of 365 days, based on low vulnerability in case of breach.</p></li>
+<li><p>(Optional) In the <strong>Allowed IP Ranges</strong> field, enter IP address ranges to restrict your access token to. You must use <a href="https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing">CIDR</a> notation to enter IP adress ranges. To add more than one allowed IP range, click <strong>Add IP Range</strong> and enter an IP range in the new text field. For now, we will skip this restriction, based on low vulnerability in case of breach.</p></li>
+<li><p>(Optional) In the <strong>Packages and scopes</strong> section, configure your token’s access to packages and scopes.</p></li>
+</ol>
+<ul>
+<li>In the <strong>Permissions</strong> dropdown menu, select <strong>No access, Read-only</strong>, or <strong>Read and write</strong>.</li>
+<li>Under <strong>Select Packages</strong>, select either:</li>
+<li><ul>
+<li><strong>All Packages</strong> to grant the token access to all packages the user account has access to.</li>
+</ul></li>
+<li><ul>
+<li>**Only select packages and scope)) to choose up to 50 specific packages or scopes to give token access to. Then select specific packages or scopes from the dropdown menu.</li>
+</ul></li>
+</ul>
+<p>For now we will not use this restriction, based on low vulnerability in case of breach. Hence, choose for Permissions: <strong>Read and write</strong>, and for Select packages: <strong>All packages</strong>.</p>
+<ol start="9" type="1">
+<li>(Optional) In <strong>Organizations</strong> section, configure your token’s access to organizations.</li>
+</ol>
+<p><strong>Note</strong>: When you give a token access to an organization, the token can only be used for managing organization settings and teams or users associated with the organization. It does not give the token the right to publish packages managed by the organization.</p>
+<p>For now we will not use this restriction, based on low vulnerability in case of breach. Hence, choose for Permissions: <strong>Read and write</strong>, and for Select organizations: <strong>tick all organizations</strong>.</p>
+<ol start="10" type="1">
+<li><p>Review the token summary, then click <strong>Generate Token</strong>.</p></li>
+<li><p>Copy the token from the top of page and keep it somewhere safe for now.</p></li>
+</ol>
 <p>More …</p>
 
 
