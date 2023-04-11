@@ -54,4 +54,17 @@ For now we will not use this restriction, based on low vulnerability in case of 
 
 11. Copy the token from the top of page and keep it somewhere safe for now.
 
+Based on "Use NPM Token GitHub Action" at https://github.com/marketplace/actions/use-npm-token
+
+Use an NPM token within an ```.npmrc``` file inside GitHub actions. Scoped packages are the primary use case.
+
+**WARNING**: If you commit after this action runs, you will likely leak your NPM token secret in your newly created ```.npmrc``` file. Please use [GitIgnore Parser](https://github.com/marketplace/actions/gitignore-parser) to fully prevent this from occurring.
+
+### Usage
+
+|| key || default || required || description ||
+| -- | -- | -- | -- |
+| token | n/a | true | An NPM token with whatever access is needed for your GitHub Action workflow |
+| workspace | ./ | false | The location of your Node workspace (needs to be a sibling of package.json) |
+
 More ...
