@@ -114,7 +114,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#create-an-npm-token" id="toc-create-an-npm-token" class="nav-link active" data-scroll-target="#create-an-npm-token">Create an NPM Token</a></li>
+  <li><a href="#create-an-npm-token" id="toc-create-an-npm-token" class="nav-link active" data-scroll-target="#create-an-npm-token">Create an NPM Token</a>
+  <ul class="collapse">
+  <li><a href="#usage" id="toc-usage" class="nav-link" data-scroll-target="#usage">Usage</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -180,9 +183,45 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Review the token summary, then click <strong>Generate Token</strong>.</p></li>
 <li><p>Copy the token from the top of page and keep it somewhere safe for now.</p></li>
 </ol>
+<p>Based on “Use NPM Token GitHub Action” at https://github.com/marketplace/actions/use-npm-token</p>
+<p>Use an NPM token within an <code>.npmrc</code> file inside GitHub actions. Scoped packages are the primary use case.</p>
+<p><strong>WARNING</strong>: If you commit after this action runs, you will likely leak your NPM token secret in your newly created <code>.npmrc</code> file. Please use <a href="https://github.com/marketplace/actions/gitignore-parser">GitIgnore Parser</a> to fully prevent this from occurring.</p>
+<section id="usage" class="level3">
+<h3 class="anchored" data-anchor-id="usage">Usage</h3>
+<table class="table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>key</th>
+<th></th>
+<th>default</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>token</td>
+<td>n/a</td>
+<td>true</td>
+<td>An NPM token with whatever access is needed for your GitHub Action workflow</td>
+</tr>
+<tr class="even">
+<td>workspace</td>
+<td>./</td>
+<td>false</td>
+<td>The location of your Node workspace (needs to be a sibling of package.json)</td>
+</tr>
+</tbody>
+</table>
 <p>More …</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
