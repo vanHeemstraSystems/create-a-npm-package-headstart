@@ -1,0 +1,57 @@
+---
+title: "Publishing a ReactJS Component"
+---
+
+Based on "Fully Automated npm publish using GitHub Actions and Semantic Release" at https://www.youtube.com/watch?v=QZdY4XYbqLI
+
+Add the following to package.json to avoid being billed for publishing to npm:
+
+```
+...
+  "publishConfig": {
+    "access": "public"
+  },
+...
+```
+package.json
+
+# Create an NPM Token
+
+Based on "Creating and viewing Access Tokens" at https://docs.npmjs.com/creating-and-viewing-access-tokens
+
+Creating granular access tokens on the website npmjs.org.
+
+1. In the upper right corner of the page (nmpjs.org), click your profile picture (after having logged in successfully), then click **Access Tokens**.
+
+2. Click **Generate New Token**, then click **Granualr Access Token**.
+
+3. Confirm with your NPM password to continue. 
+
+4. In the **Token Name** field, enter a name for your token (e.g., EASYASPIE). *TIP*: We can use https://randomwordgenerator.com/phrase.php to create a unique name, then remove spaces, and capitalize all.
+
+5. (Optional) In the **Description** field, enter a description for your token (e.g., NPM Token). 
+
+6. In the **Expiration** field, enter a token expiration period. This must be between 1 and 365 days. Let us set it to the max of 365 days, based on low vulnerability in case of breach.
+
+7. (Optional) In the **Allowed IP Ranges** field, enter IP address ranges to restrict your access token to. You must use [CIDR](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) notation to enter IP adress ranges. To add more than one allowed IP range, click **Add IP Range** and enter an IP range in the new text field. For now, we will skip this restriction, based on low vulnerability in case of breach.
+
+8.  (Optional) In the **Packages and scopes** section, configure your token's access to packages and scopes.
+
+- In the **Permissions** dropdown menu, select **No access, Read-only**, or **Read and write**.
+- Under **Select Packages**, select either:
+- - **All Packages** to grant the token access to all packages the user account has access to.
+- - **Only select packages and scope)) to choose up to 50 specific packages or scopes to give token access to. Then select specific packages or scopes from the dropdown menu.
+
+For now we will not use this restriction, based on low vulnerability in case of breach. Hence, choose for Permissions: **Read and write**, and for Select packages: **All packages**.
+
+9. (Optional) In **Organizations** section, configure your token's access to organizations. 
+
+**Note**: When you give a token access to an organization, the token can only be used for managing organization settings and teams or users associated with the organization. It does not give the token the right to publish packages managed by the organization.
+
+For now we will not use this restriction, based on low vulnerability in case of breach. Hence, choose for Permissions: **Read and write**, and for Select organizations: **tick all organizations**.
+
+10. Review the token summary, then click **Generate Token**.
+
+11. Copy the token from the top of page and keep it somewhere safe for now.
+
+More ...
