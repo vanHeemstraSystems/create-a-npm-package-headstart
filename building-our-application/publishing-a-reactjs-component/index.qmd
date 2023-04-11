@@ -64,7 +64,7 @@ Use an NPM token within an ```.npmrc``` file inside GitHub actions. Scoped packa
 
 Inputs
 
-|| key || default || required || description ||
+| key | default | required | description |
 | -- | -- | -- | -- |
 | token | n/a | true | An NPM token with whatever access is needed for your GitHub Action workflow |
 | workspace | ./ | false | The location of your Node workspace (needs to be a sibling of package.json) |
