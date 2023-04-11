@@ -23,7 +23,7 @@ Creating granular access tokens on the website npmjs.org.
 
 1. In the upper right corner of the page (nmpjs.org), click your profile picture (after having logged in successfully), then click **Access Tokens**.
 
-2. Click **Generate New Token**, then click **Granualr Access Token**.
+2. Click **Generate New Token**, then click **Granular Access Token**.
 
 3. Confirm with your NPM password to continue. 
 
