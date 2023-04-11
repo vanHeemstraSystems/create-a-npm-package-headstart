@@ -56,11 +56,25 @@
     "text": "Based on “Fully Automated npm publish using GitHub Actions and Semantic Release” at https://www.youtube.com/watch?v=QZdY4XYbqLI\nAdd the following to package.json to avoid being billed for publishing to npm:\npackage.json"
   },
   {
-    "objectID": "building-our-application/publishing-a-reactjs-component/index.html#creating-secrets",
-    "href": "building-our-application/publishing-a-reactjs-component/index.html#creating-secrets",
+    "objectID": "building-our-application/publishing-a-reactjs-component/index.html#creating-npm-token-secrets",
+    "href": "building-our-application/publishing-a-reactjs-component/index.html#creating-npm-token-secrets",
     "title": "Publishing a ReactJS Component",
-    "section": "Creating secrets",
-    "text": "Creating secrets\nBased on “Set up Secrets in GitHub Action workflows” at https://github.com/marketplace/actions/use-npm-token\n\nOn GitHub, navigate to the main page of the repository.\nUnder your repository name, click on the Settings tab.\nIn the left sidebar, click Secrets and variables, then choose Actions.\nOn the right bar, with the Secrest tab selected, click on New repository secret.\nType the name for your secret in the “Name” input box (e.g. NPM_TOKEN).\nType the value for your secret (e.g. the value you saved before of the NPM TOKEN you generated on npmjs.org).\nClick Add secret.\n\nNow this secret will be usable in your GitHub Actions workflow, as follows:\n...\n      env:\n        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}\n..."
+    "section": "Creating NPM Token secrets",
+    "text": "Creating NPM Token secrets\nBased on “Set up Secrets in GitHub Action workflows” at https://github.com/marketplace/actions/use-npm-token\n\nOn GitHub, navigate to the main page of the repository.\nUnder your repository name, click on the Settings tab.\nIn the left sidebar, click Secrets and variables, then choose Actions.\nOn the right bar, with the Secrest tab selected, click on New repository secret.\nType the name for your secret in the “Name” input box (e.g. NPM_TOKEN).\nType the value for your secret (e.g. the value you saved before of the NPM TOKEN you generated on npmjs.org).\nClick Add secret.\n\nNow this secret will be usable in your GitHub Actions workflow, as follows:\n...\n      env:\n        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}\n..."
+  },
+  {
+    "objectID": "building-our-application/publishing-a-reactjs-component/index.html#creating-a-github-token",
+    "href": "building-our-application/publishing-a-reactjs-component/index.html#creating-a-github-token",
+    "title": "Publishing a ReactJS Component",
+    "section": "Creating a GitHub Token",
+    "text": "Creating a GitHub Token\nMORE …"
+  },
+  {
+    "objectID": "building-our-application/publishing-a-reactjs-component/index.html#creating-github-token-secrets",
+    "href": "building-our-application/publishing-a-reactjs-component/index.html#creating-github-token-secrets",
+    "title": "Publishing a ReactJS Component",
+    "section": "Creating GitHub Token secrets",
+    "text": "Creating GitHub Token secrets\nBased on “Set up Secrets in GitHub Action workflows” at https://github.com/marketplace/actions/use-npm-token\n\nOn GitHub, navigate to the main page of the repository.\nUnder your repository name, click on the Settings tab.\nIn the left sidebar, click Secrets and variables, then choose Actions.\nOn the right bar, with the Secrest tab selected, click on New repository secret.\nType the name for your secret in the “Name” input box (e.g. GITHUB_TOKEN).\nType the value for your secret (e.g. the value you saved before of the GITHUB TOKEN you generated on github.com).\nClick Add secret.\n\nNow this secret will be usable in your GitHub Actions workflow, as follows:\n...\n      env:\n        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}\n..."
   },
   {
     "objectID": "requirements/index.html",
