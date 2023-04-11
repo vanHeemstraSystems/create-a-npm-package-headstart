@@ -61,7 +61,7 @@ Based on "Set up Secrets in GitHub Action workflows" at [https://github.com/mark
 1. On GitHub, navigate to the main page of the repository.
 2. Under your repository name, click on the **Settings** tab.
 3. In the left sidebar, click **Secrets and variables**, then choose **Actions**.
-4. On the right bar, with the **Secrest** tab selected, click on **New repository secret**.
+4. On the right bar, with the **Secrets** tab selected, click on **New repository secret**.
 5. Type the name for your secret in the "Name" input box (e.g. NPM_TOKEN).
 6. Type the value for your secret (e.g. the value you saved before of the NPM TOKEN you generated on npmjs.org).
 7. Click Add secret.
@@ -77,21 +77,31 @@ Now this secret will be usable in your GitHub Actions workflow, as follows:
 
 ## Creating a GitHub Token
 
-MORE ...
+Based on "Automatic token authentication" at https://docs.github.com/en/actions/security-guides/automatic-token-authentication
+
+GitHub provides a token that you can use to authenticate on behalf of GitHub Actions.
+
+### About the GITHUB_TOKEN secret
+
+At the start of each workflow run, GitHub automatically creates a unique GITHUB_TOKEN secret to use in your workflow. You can use the GITHUB_TOKEN to authenticate in a workflow run.
+
+When you enable GitHub Actions, GitHub installs a GitHub App on your repository. The GITHUB_TOKEN secret is a GitHub App installation access token. You can use the installation access token to authenticate on behalf of the GitHub App installed on your repository. The token's permissions are limited to the repository that contains your workflow. For more information, see "[Permissions for the GITHUB_TOKEN](https://docs.github.com/en/actions/security-guides/automatic-token-authentication#permissions-for-the-github_token)."
+
+Before each job begins, GitHub fetches an installation access token for the job. The GITHUB_TOKEN expires when a job finishes or after a maximum of 24 hours.
+
+The token is also available in the github.token context. For more information, see "[Contexts](https://docs.github.com/en/actions/learn-github-actions/contexts#github-context)."
+
+### Using the GITHUB_TOKEN in a workflow
+
+You can use the GITHUB_TOKEN by using the standard syntax for referencing secrets: ${{ secrets.GITHUB_TOKEN }}. Examples of using the GITHUB_TOKEN include passing the token as an input to an action, or using it to make an authenticated GitHub API request.
+
+**Important**: An action can access the GITHUB_TOKEN through the github.token context even if the workflow does not explicitly pass the GITHUB_TOKEN to the action. As a good security practice, you should always make sure that actions only have the minimum access they require by limiting the permissions granted to the GITHUB_TOKEN. For more information, see "[Permissions for the GITHUB_TOKEN](https://docs.github.com/en/actions/security-guides/automatic-token-authentication#permissions-for-the-github_token)."
+
+When you use the repository's GITHUB_TOKEN to perform tasks, events triggered by the GITHUB_TOKEN, with the exception of workflow_dispatch and repository_dispatch, will not create a new workflow run. This prevents you from accidentally creating recursive workflow runs. For example, if a workflow run pushes code using the repository's GITHUB_TOKEN, a new workflow will not run even when the repository contains a workflow configured to run when push events occur.
 
 ## Creating GitHub Token secrets
 
-Based on "Set up Secrets in GitHub Action workflows" at [https://github.com/marketplace/actions/use-npm-token](https://github.com/Azure/actions-workflow-samples/blob/master/assets/create-secrets-for-GitHub-workflows.md)
-
-1. On GitHub, navigate to the main page of the repository.
-2. Under your repository name, click on the **Settings** tab.
-3. In the left sidebar, click **Secrets and variables**, then choose **Actions**.
-4. On the right bar, with the **Secrest** tab selected, click on **New repository secret**.
-5. Type the name for your secret in the "Name" input box (e.g. GITHUB_TOKEN).
-6. Type the value for your secret (e.g. the value you saved before of the GITHUB TOKEN you generated on github.com).
-7. Click Add secret.
-
-Now this secret will be usable in your GitHub Actions workflow, as follows:
+At the start of each workflow run, GitHub automatically creates a unique GITHUB_TOKEN secret to use in your workflow. You can use the GITHUB_TOKEN to authenticate in a workflow run, as follows:
 
 ```
 ...
