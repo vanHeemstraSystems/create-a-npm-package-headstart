@@ -40,7 +40,7 @@ Creating granular access tokens on the website npmjs.org.
 - In the **Permissions** dropdown menu, select **No access, Read-only**, or **Read and write**.
 - Under **Select Packages**, select either:
 - - **All Packages** to grant the token access to all packages the user account has access to.
-- - **Only select packages and scope)) to choose up to 50 specific packages or scopes to give token access to. Then select specific packages or scopes from the dropdown menu.
+- - **Only select packages and scope** to choose up to 50 specific packages or scopes to give token access to. Then select specific packages or scopes from the dropdown menu.
 
 For now we will not use this restriction, based on low vulnerability in case of breach. Hence, choose for Permissions: **Read and write**, and for Select packages: **All packages**.
 
