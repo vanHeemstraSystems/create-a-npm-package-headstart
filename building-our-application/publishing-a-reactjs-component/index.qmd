@@ -54,8 +54,7 @@ For now we will not use this restriction, based on low vulnerability in case of 
 
 11. Copy the token from the top of page and keep it somewhere safe for now.
 
-
-## Creating secrets
+## Creating NPM Token secrets
 
 Based on "Set up Secrets in GitHub Action workflows" at [https://github.com/marketplace/actions/use-npm-token](https://github.com/Azure/actions-workflow-samples/blob/master/assets/create-secrets-for-GitHub-workflows.md)
 
@@ -73,5 +72,30 @@ Now this secret will be usable in your GitHub Actions workflow, as follows:
 ...
       env:
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+...
+```
+
+## Creating a GitHub Token
+
+MORE ...
+
+## Creating GitHub Token secrets
+
+Based on "Set up Secrets in GitHub Action workflows" at [https://github.com/marketplace/actions/use-npm-token](https://github.com/Azure/actions-workflow-samples/blob/master/assets/create-secrets-for-GitHub-workflows.md)
+
+1. On GitHub, navigate to the main page of the repository.
+2. Under your repository name, click on the **Settings** tab.
+3. In the left sidebar, click **Secrets and variables**, then choose **Actions**.
+4. On the right bar, with the **Secrest** tab selected, click on **New repository secret**.
+5. Type the name for your secret in the "Name" input box (e.g. GITHUB_TOKEN).
+6. Type the value for your secret (e.g. the value you saved before of the GITHUB TOKEN you generated on github.com).
+7. Click Add secret.
+
+Now this secret will be usable in your GitHub Actions workflow, as follows:
+
+```
+...
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ...
 ```
