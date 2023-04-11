@@ -188,6 +188,7 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>WARNING</strong>: If you commit after this action runs, you will likely leak your NPM token secret in your newly created <code>.npmrc</code> file. Please use <a href="https://github.com/marketplace/actions/gitignore-parser">GitIgnore Parser</a> to fully prevent this from occurring.</p>
 <section id="usage" class="level3">
 <h3 class="anchored" data-anchor-id="usage">Usage</h3>
+<p>Inputs</p>
 <table class="table">
 <colgroup>
 <col style="width: 25%">
@@ -218,6 +219,29 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
+<p>Outputs</p>
+<ul>
+<li>None</li>
+</ul>
+<p>Example workflow</p>
+<pre><code>on: pull_request
+
+jobs:
+  test-coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Use NPM Token with organization read access
+        uses: dkershner6/use-npm-token-action@v1
+        with:
+          token: "${{ secrets.NPMJS_READ }}"
+          workspace: ./node
+
+      - run: npm i # This will now work with scoped packages</code></pre>
+<p>Example .npmrc</p>
+<pre><code>NPMJS_READ="npm_reifdsifyosefodjiawueryor389qruowdo"</code></pre>
 <p>More …</p>
 
 
