@@ -18,3 +18,32 @@ Based on "Awesome Quarto" at https://github.com/mcanouil/awesome-quarto
 Based on "Quarto Web" at https://github.com/quarto-dev/quarto-web and https://quarto.org/
 
 Based on "Creating your personal website using Quarto" at https://ucsb-meds.github.io/creating-quarto-websites/
+
+**WARNING**: In order for the automation to successfully push changes to the repository, make sure you have set the following at your repository's "Settings" > "Actions" > "General":
+
+Workflow permissions
+
+- [Checked]: Read and write permissions
+- [Unchecked]: Read repository contents and packages permissions
+
+If the option is disabled, you can enable that option under ORGANIZATION settings not REPO settings.
+
+Organizations's "Settings" > "Actions" > "General":
+
+Workflow permissions
+
+- [Checked]: Read and write permissions
+- [Unchecked]: Read repository contents and packages permissions
+
+# Executive Summary
+
+To commit changes after making file changes run the following command:
+
+```
+$ git add .
+$ npx cz
+```
+
+This will trigger *commitizen (cz)* and you will be prompted to describe your change. 
+
+Follow with ```git push```.
