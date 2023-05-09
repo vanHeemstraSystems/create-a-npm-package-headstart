@@ -1,5 +1,0 @@
----
-title: "Requirements"
----
-
-Requirements of the application of this site
