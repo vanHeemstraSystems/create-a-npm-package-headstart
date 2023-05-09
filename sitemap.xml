@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://github.com/vanHeemstraSystems/create-an-npm-package/SUMMARY.html</loc>
-    <lastmod>2023-05-09T12:54:48.843Z</lastmod>
-  </url>
-  <url>
     <loc>https://github.com/vanHeemstraSystems/create-an-npm-package/conclusion/index.html</loc>
-    <lastmod>2023-05-09T12:54:49.507Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/vanHeemstraSystems/create-an-npm-package/building-our-application/creating-a-github-repository/index.html</loc>
-    <lastmod>2023-05-09T12:54:50.119Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/vanHeemstraSystems/create-an-npm-package/building-our-application/creating-a-github-action/index.html</loc>
-    <lastmod>2023-05-09T12:54:50.811Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/vanHeemstraSystems/create-an-npm-package/building-our-application/installing-commitizen/index.html</loc>
-    <lastmod>2023-05-09T12:54:51.415Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/vanHeemstraSystems/create-an-npm-package/building-our-application/setting-up-semantic-release/index.html</loc>
-    <lastmod>2023-05-09T12:54:51.971Z</lastmod>
+    <lastmod>2023-05-09T13:20:08.716Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/vanHeemstraSystems/create-an-npm-package/building-our-application/creating-a-reactjs-component/index.html</loc>
-    <lastmod>2023-05-09T12:54:52.587Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/vanHeemstraSystems/create-an-npm-package/building-our-application/index.html</loc>
-    <lastmod>2023-05-09T12:54:52.911Z</lastmod>
+    <lastmod>2023-05-09T13:20:09.940Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/vanHeemstraSystems/create-an-npm-package/building-our-application/publishing-a-reactjs-component/index.html</loc>
-    <lastmod>2023-05-09T12:54:53.423Z</lastmod>
+    <lastmod>2023-05-09T13:20:10.576Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/vanHeemstraSystems/create-an-npm-package/introduction/index.html</loc>
-    <lastmod>2023-05-09T12:54:53.747Z</lastmod>
+    <loc>https://github.com/vanHeemstraSystems/create-an-npm-package/building-our-application/creating-a-github-repository/index.html</loc>
+    <lastmod>2023-05-09T13:20:11.344Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/vanHeemstraSystems/create-an-npm-package/building-our-application/setting-up-semantic-release/index.html</loc>
+    <lastmod>2023-05-09T13:20:12.060Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/vanHeemstraSystems/create-an-npm-package/building-our-application/index.html</loc>
+    <lastmod>2023-05-09T13:20:12.452Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/vanHeemstraSystems/create-an-npm-package/building-our-application/installing-commitizen/index.html</loc>
+    <lastmod>2023-05-09T13:20:13.148Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/vanHeemstraSystems/create-an-npm-package/building-our-application/creating-a-github-action/index.html</loc>
+    <lastmod>2023-05-09T13:20:13.948Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/vanHeemstraSystems/create-an-npm-package/SUMMARY.html</loc>
+    <lastmod>2023-05-09T13:20:14.300Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/vanHeemstraSystems/create-an-npm-package/index.html</loc>
-    <lastmod>2023-05-09T12:54:54.043Z</lastmod>
+    <lastmod>2023-05-09T13:20:14.648Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/vanHeemstraSystems/create-an-npm-package/introduction/index.html</loc>
+    <lastmod>2023-05-09T13:20:15.088Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/vanHeemstraSystems/create-an-npm-package/requirements/index.html</loc>
-    <lastmod>2023-05-09T12:54:54.383Z</lastmod>
+    <lastmod>2023-05-09T13:20:15.436Z</lastmod>
   </url>
 </urlset>
