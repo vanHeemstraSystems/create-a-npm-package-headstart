@@ -7,7 +7,7 @@ Based on "Fully Automated npm publish using GitHub Actions and Semantic Release"
 
 Based on "Create and Publish packages to npm - React Component Library using tsdx" at https://www.youtube.com/watch?v=aVFasPXkyRE
 
-Based on "An Intro To Using npm and ES6 Modules for Front End Development" at https://wesbos.com/javascript-modules
+Based on "n Intro To Using npm and ES6 Modules for Front End Development" at https://wesbos.com/javascript-modules
 
 Can be read as "Automation Management" at https://app.gitbook.com/s/???/
 
